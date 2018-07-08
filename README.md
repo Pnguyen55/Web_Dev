@@ -4,19 +4,19 @@ Logging progress of an online web developer course
 
 Learn:
 
-Frontend
-HTML
-CSS
-Bootstrap
-Javascript
-jQuery
+Frontend:
+HTML,
+CSS,
+Bootstrap,
+Javascript,
+jQuery,
 
-Backend
-Node JS
-Server side frameworks
-Express
-APIs
-YelpCamp
+Backend:
+Node JS,
+Server side frameworks,
+Express,
+APIs,
+YelpCamp,
 
-Version Control
+Version Control:
 Git/Github
