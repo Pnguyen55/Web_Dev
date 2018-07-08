@@ -1,0 +1,10 @@
+body{
+	
+}
+
+li{
+	border: 2px solid red;
+}
+.done{
+	text-decoration: line-through;
+}

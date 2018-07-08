@@ -1,0 +1,48 @@
+
+/* Element */
+li{
+	background: skyblue;
+}
+
+/* Class */
+.hello {
+	color: lightslategrey;
+}
+
+/* ID */
+
+#name{
+
+}
+
+/* Star */ 
+* {
+	border: 1px solid lightgrey;
+}
+
+/* Descendant Selector*/
+li a {
+	color: purple;
+}
+
+/* Adjacent Selector */
+h4 + ul {
+	border: red 4px solid;
+	color: orange;
+}
+
+/* Attribute Selector */
+
+a[href="https://www.google.com"] {
+	background: white;
+}
+
+/* nth of type */
+
+ul:nth-of-type(2){
+	background: purple;
+}
+
+li:nth-of-type(even){
+	color: green;
+}

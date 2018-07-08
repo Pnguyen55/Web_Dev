@@ -1,0 +1,20 @@
+h1{
+	color: #000000;
+
+	border: 2px solid rgb(255,100,80);
+}
+
+li{
+	color: #4B0082;
+}
+
+h4{
+	background: rgb(255,100,80);
+}
+
+body{
+	background: url(http://www.backgroundsy.com/file/wood-grain-background.jpg);
+	background-repeat: : no-repeat;
+	background-size: cover;
+
+}
