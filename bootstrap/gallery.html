@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<!-- JQuery --> 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<!-- FontAwesome --> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<style type="text/css">
+		body {
+			padding-top: 70px;
+		}
+		.jumbotron {
+			color: #2c3e50;
+		}
+		.bg-dark {
+    		background-color: #2c3e50!important;
+		}	
+		.navbar-dark .navbar-nav .nav-link {
+    		color: rgba(255,255,255,1);
+		}	
+	</style>
+</head>
+<body>
+
+<nav id="topNav" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+	 <div class="container-fluid">
+		<a class="navbar-brand" href="#" ><i class="far fa-image"></i> IMGS</a>
+		<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  	<ul class="navbar-nav mr-auto">
+	  		<li class="nav-item "><a class="nav-link" href="#">About</a></li>
+	  		<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+	    </ul>
+	    <ul class="navbar-nav ml-auto">
+	    	<li class="nav-item "><a class="nav-link" href="#">Sign up</a></li>
+	    	<li class="nav-item "><a class="nav-link" href="#">Login</a></li>
+	    </ul>  
+	  </div>
+	 </div>
+</nav>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1><i class="fas fa-camera-retro"></i></span> The Image Gallery</h1>
+		<p>A bunch of beautiful images from Unsplash</p>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-4 col-sm-6"> 
+			<img class="img-thumbnail img-fluid" src="https://images.unsplash.com/photo-1531405272016-2bd40d36e4d1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cbdd0631b74ea57c38ba443122ae329&auto=format&fit=crop&w=500&q=60" alt="Responsive image">
+		</div>
+		<div class="col-lg-4 col-sm-6">
+			<img class="img-thumbnail img-fluid" src="https://images.unsplash.com/photo-1531403267796-e394da19af47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1c400c1666ea8495deb423eacf43120f&auto=format&fit=crop&w=500&q=60" alt="Responsive image">
+		</div>
+		<div class="col-lg-4 col-sm-6">
+			<img class="img-thumbnail img-fluid" src="https://images.unsplash.com/photo-1531296917375-a4d4d3fe7931?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=16cabbfdc1383c70c7354cf48155d29c&auto=format&fit=crop&w=500&q=60">
+		</div>
+		<div class="col-lg-4 col-sm-6"> 
+				<img class="img-thumbnail img-fluid" src="https://images.unsplash.com/photo-1531351761167-c1a0f1356c7c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=215995f81c24045c5a5314f23afcf063&auto=format&fit=crop&w=500&q=60" alt="Responsive image">
+		</div>
+		<div class="col-lg-4 col-sm-6">
+			<img class="img-thumbnail img-fluid" src="https://images.unsplash.com/photo-1531323386183-43890b5c766d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=89a610ca6ea8404467b2a5d0126bb83f&auto=format&fit=crop&w=500&q=60">
+		</div>
+		<div class="col-lg-4 col-sm-6">
+			<img class="img-thumbnail img-fluid" src="https://images.unsplash.com/photo-1531336542000-a8259492b550?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82e2bb59793ac56f5e5c681531f57407&auto=format&fit=crop&w=500&q=60">
+		</div>
+		<div class="col-lg-4 col-sm-6"> 
+				<img class="img-thumbnail img-fluid" src="https://images.unsplash.com/photo-1531342301391-b8fcb7db0695?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=147dab323a94f47485dc4fee74959157&auto=format&fit=crop&w=500&q=60">
+		</div>
+		<div class="col-lg-4 col-sm-6">
+			<img class="img-thumbnail img-fluid" src="https://images.unsplash.com/photo-1531354580326-4f44f943946c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b32268dc4fb4d376fd20c1432a9d34ba&auto=format&fit=crop&w=500&q=60">
+		</div>
+		<div class="col-lg-4 col-sm-6">
+			<img class="img-thumbnail img-fluid" src="https://images.unsplash.com/photo-1531403794573-286b1ca066c4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1e5f6fc2f960744f0296df5a2a42b9a0&auto=format&fit=crop&w=500&q=600">
+		</div>
+	</div>
+</div>sm-
+</body>
+</html>	
