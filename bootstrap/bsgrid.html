@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" type="text/css" href="Bootstrap.css">
+
+	<style type="text/css">
+	.pink {
+		background: pink;
+		border: 1px solid purple;
+	}
+	.orange {
+		background: orange;
+		border: 1px dashed red;
+	}
+	</style>
+
+</head>
+<body>
+
+<!--Each row for the grid system can only contain 12 units -->
+<div class="container">
+
+<!--
+	<div class="row ">
+		<div class="col-lg-2 pink">Col Lg 2</div>
+		<div class="col-lg-8 pink">Col Lg 8</div>
+		<div class="col-lg-2 pink">Col Lg 2</div>	
+	</div>
+	<div class="row ">
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>
+		<div class="col-md-1 pink">Col Lg 1</div>	
+	</div>
+-->
+
+
+<!-- Nested Grids -->
+	<div class="row ">
+		<div class="col-md-3 col-sm-6 pink">
+			<div class="row">
+				<div class="col-lg-6 orange">first half</div>
+				<div class="col-lg-6 orange">other half</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 pink">Col Lg 3</div>
+		<div class="col-md-3 col-sm-6 pink">Col Lg 3</div>	
+		<div class="col-md-3 col-sm-6 pink">
+			<div class="row">
+				<div class="col-lg-2 orange">1/6</div>
+				<div class="col-lg-2 orange">1/6</div>
+				<div class="col-lg-2 orange">1/6</div>
+				<div class="col-lg-2 orange">1/6</div>
+				<div class="col-lg-2 orange">1/6</div>
+				<div class="col-lg-2 orange">1/6</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
