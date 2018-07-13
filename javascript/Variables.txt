@@ -1,0 +1,47 @@
+Variables store values
+
+Camelcase is how you name variables
+camelCase, helpMe, whatElse
+
+var yourVariableName = yourValue;
+
+They can store any primitive type:
+var name = "Susan";
+var secretNumber = 73;
+var isAdorable = truel 
+
+Variables can be called for their stored value
+var name = "Susan";
+>"hello there " + name 
+hello there Susan
+
+var num = 37;
+>num + 3 + 10 
+50
+
+We can also update existing variables
+var name = "Yuki";
+name = "Heather";
+>name
+Heather
+
+You can also change the type of variable by updating it
+var num = "fifty"
+>num
+fifty
+
+num = 55;
+>num
+55
+
+Null and Undefined 
+
+Variables that are declared but not initialized are undefined
+var name; 
+var age;
+
+null is "explicitily nothing"
+var currentPlayer = "Kate";
+currentPlayer = null; //no current player
+
+

@@ -1,0 +1,5 @@
+Location of scripts is important in the html
+
+If it is in the head, it will run before the page loads
+
+If it is at the end of the body, it will load after the content of the page

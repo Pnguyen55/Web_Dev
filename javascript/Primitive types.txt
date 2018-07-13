@@ -1,0 +1,77 @@
+5 Primitive Datatypes in Javascript
+
+1. Numbers
+4
+9.3
+-10
+
+2. Strings
+"Hello World"
+"43"
+"Cat"
+
+3. Booleans
+true 
+false
+
+4. null
+null 
+
+5. undefined
+undefined 
+
+Numbers example
+>4
+
+4
+ 
+
+>3 + 4
+
+7
+
+>(3-8) * 24
+-120
+
+>10 % 3
+1
+
+>20 % 3 
+2
+
+Strings
+
+Single or double quotes work
+"hello world"
+'hello world'
+
+Concatenation 
+>"charlie" + "brown" 
+charliebrown
+
+>'Hello ' + "World"
+Hello World
+
+>"she said \"goodbye!\" "
+she said "goodbye!"
+
+>"To see a backslash \\"
+To see a backslash: \
+
+>"what is the length".length
+18
+
+>"The Beatles"[0]
+
+T
+
+Practice Problems
+1. 100 % 3
+1
+
+2. ("blah" + "blah")[6]
+a
+
+3. "hello".length % "hi\\".length
+2
+

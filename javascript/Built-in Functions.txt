@@ -1,0 +1,17 @@
+Useful built-in functions
+
+//alert(); Used for sending alert through the web browser
+alert("Hello there!!!");
+alert(352 + 8);
+
+//console.log(); Prints outputs to the console
+console.log("Hello from the console!");
+console.log(100/3);
+
+//prompt(); sends a prompt to the user through the web browser
+var userName = prompt("What is your name?");
+>Katarina 
+>userName
+Katarina 
+
+//clear(); clears the console 
