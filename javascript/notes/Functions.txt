@@ -1,0 +1,184 @@
+Functions
+
+Functions let us wrap bits of code into reusable packages.
+They are on of the building blocks of JS.
+
+function doSomething() {
+	console.log("HELO WORLD");
+}
+
+doSomething();
+
+function sayHi() {
+	console.log("Hello!");
+	console.log("Goodbye!");
+}
+
+//executing the function
+sayHi();
+
+Output: 
+Hello!
+Goodbye!
+
+//refering the function
+sayHi
+function sayHi() {
+	console.log("Hello!");
+	console.log("Goodbye!");
+}
+
+
+Arguments
+------------------
+Functions can take arguments as inputs
+
+function square(num) {
+	console.log(num * num);
+}
+
+square(10); //100
+square(3);  //9
+square(4);  //16
+
+function sayHello() {
+	console.log("Hello there!");
+}
+
+function sayHello(name) {
+	console.log("Hello there " + name + "!");
+}
+
+function area(length, width) {
+	console.log(length * width);
+}
+
+area(9,2) //18
+
+function greet(person1, person2, person3) {
+	console.log("hi " + person1);
+	console.log("hi " + person2);
+	console.log("hi " + person3);
+}
+
+greet("Harry", "Ron", "Hermione");
+
+Output: 
+hi Harry
+hi Ron
+hi Hermione
+
+greet("Harry", "Ron");
+
+Output:
+hi Harry
+hi Ron
+hi undefined
+
+The Return Keyword
+---------------------------
+Often used when we want the function to send back an output value
+
+Argument| Method |  Return 
+Input -> Function -> Output
+
+function square(x) {
+	return(x * x);
+}
+
+var num = square(4);
+
+num 
+>16
+
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+var city = "paris"; 		//paris
+var capital = capitalize(city);	//Paris
+
+//The return keyword stops execution of a function
+function capitalize(str) {
+	if(typeof str === "number") {
+		return "that's not a string!"
+	}
+}
+
+
+Function Declaration vs. Function Expression
+---------------------------------------------------
+//Function declaration
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+//Function expression
+var capitalize = function(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+The function can be called again if declared, if used as an expression
+it is not possible to call the function again.
+
+
+Exercise 1
+-----------------
+function test(x,y) {
+	return y - x;
+}
+test(10,40);
+
+Output: 
+30
+
+Exercise 2
+------------------
+function test(x) {
+	return x*2;
+	console.log(x);
+	return x/2;
+}
+
+test(40);
+
+Output: 
+80
+
+Functions Problem Set
+----------------------------
+Write a function that returns true if a number is even
+function isEven(num) {
+	if(num % 2 == 0) {
+		return true;
+	}
+	return false;
+}
+
+Write a function factorial() which takes a single numeric
+argument and returns the factorial of that number
+
+function factorial(num) {
+	
+	if(num == 0){
+		return 1;
+	}
+
+	for(var i = num-1; i > 0; i--){
+		num = num * i;	
+	}	
+
+	return num;	
+}
+
+write a function kebabToSnake() which takes a single kebab-cased string
+argument and returns the snake_cased version
+
+function kebabToSnake(str) {
+	
+	while(str.includes("-")){
+		str = str.replace("-", "_");
+	}
+
+	return str;
+} 

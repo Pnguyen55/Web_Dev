@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions Problem Set</title>
+	<script type="text/javascript" src="functions.js"></script>
+</head>
+<body>
+	<h1>Function Problem Set</h1>
+
+	<ul>
+		<li>Write a function that returns true if a number is even</li>
+		<li>Write a function factorial() which takes a single numeric argument and returns the factorial of that number</li>
+		<li>Write a function kebabToSnake() which takes a single kebab-cased string argument and returns the snake_cased version</li>
+	</ul>
+
+	<h2>My solutions</h2>
+
+	<h3>
+		<p>
+		//Write a function that returns true if a number is even
+		<div>
+		function isEven(num) { <br>
+			if(num % 2 == 0) { <br>
+				return true; <br>
+			}	<br>
+		return false;<br>
+		}
+		</div>
+		</p>
+	</h3>
+
+	<h3>
+		<p>
+		//Write a function factorial() which takes a single numeric argument and returns the factorial of that number
+		<div>
+		function factorial(num) { <br>
+			if(num == 0){ 	<br>
+				return 1;	<br>
+			}	<br>
+			for(var i = num-1; i > 0; i--){ <br>
+				num = num * i;	 <br>
+			}	<br>
+			return num;	 <br>
+		}
+		</div>
+		</p>
+	</h3>
+
+	<h3>
+		<p>
+		//Write a function kebabToSnake() which takes a single kebab-cased string argument and returns the snake_cased version
+		<div>
+		function kebabToSnake(str) { <br>
+	 
+			while(str.includes("-")){ <br>
+				str = str.replace("-", "_");  <br>
+			} <br>
+
+			return str; <br>
+		} 
+		</div>
+		</p>
+	</h3>
+
+</body>
+</html>

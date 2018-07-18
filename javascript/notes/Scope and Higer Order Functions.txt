@@ -1,0 +1,44 @@
+Javascript Scope
+----------------------
+
+Scope is the context that code is executed in 
+
+function doMath(){
+	var x = 40;
+	console.log(x);
+}
+
+doMath()
+>40
+
+x
+>error: x is not defined 
+
+Variables declared outside functions can be used inside functions and changed, 
+but variables declared inside functions can only be used inside that function.
+
+
+Higher Order Functions
+--------------------------
+We can pass functions to other functions!
+
+function sing() {
+	console.log("twinkle twinkle...");
+	console.log("how I wonder...");
+}
+
+setInterval(sing, 1000);
+
+Output:
+twinkle twinkle...
+how I wonder...
+//1000ms later
+twinkle twinkle...
+how I wonder...
+//1000ms later
+twinkle twinkle...
+how I wonder...
+
+setInterval(function() {
+	console.log("I am an anonymous function!");	
+}, 2000);

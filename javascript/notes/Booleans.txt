@@ -1,0 +1,103 @@
+Boolean Logic
+
+Comparison Operators 
+-----------------------
+> Greater than 
+
+>= Greater than or equal to
+
+< Less than
+
+<= Less than or equal to
+
+== Equal to
+
+!= Not equal to
+
+=== Equal value and type
+
+!== Not equal value or equal type 
+
+
+== vs. ===
+
+x == "99" //true
+
+x === "99" //fase
+
+var y = null;
+
+y == undefined //true
+
+y === undefined //false
+
+
+Few Interesting Cases
+--------------------------
+true == "1" //true
+
+0 == false //true
+
+null == undefined //true
+
+NaN == NaN //false
+
+Logical Operators
+-------------------
+&& AND
+|| OR
+!  NOT
+
+
+Exercise 1 
+-------------
+var x = 10;
+var y = "a"
+
+y === "b" || x >= 10 //true 
+
+Exercise 
+-------------
+var x = 3;
+var y = 8;
+
+!(x == "3" || x === y) && !(y != 8 && x <= y) //false
+
+
+Truthy and Falsy Values
+-------------------------
+Values that aren't actually true or false, but 
+are inherently "truthy" or "falsey" when evaluated in a 
+boolean context
+
+Examples:
+
+!"Hello World" //false
+
+!"" //true
+
+!null //true
+
+!0 //true
+
+!-1 //false
+
+!NaN //true
+
+Falsy Values: Values that inherently false when evaluated 
+	-false
+	-0
+	-""
+	-null
+	-undefined
+	-NaN
+
+Everything else is truthy
+
+Exercise 3
+-------------
+var str = "" -falsy
+var msg = "haha!" -truthy
+var isFunny = "false" -truthy
+
+!((str || msg) && isFunny) //false
