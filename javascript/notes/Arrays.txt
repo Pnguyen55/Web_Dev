@@ -123,7 +123,54 @@ console.log(friendGroups[2][0]);
 
 Array Iteration 
 ------------------
+-Use a for loop to iterate over an array
+-Use forEach to iterate over an array
+-Compare and contrast for loops and forEach
 
+//For Loop, use the array's length property
+var colors = ["red", "orange", "yellow", "green"];
 
+for(var i = 0; i < colors.length; i++) {
+	console.log(colors[i]);
+}
+
+//forEach, Javascript has a built-in way of iterating: forEach()
+colors.forEach(someFunction);
+
+//.forEach takes a callback function, that callback function is 
+//expected to have at least 1, but up to 3, arguments. 
+
+The arguments are in a specific order:
+- The first one represents each element in the array 
+(per loop iteration) that .forEach was called on.
+- The second represents the index of said element.
+- The third represents the array that .forEach was 
+called on (it will be the same for every iteration of the loop).
+
+colors.forEach(function(color){
+	console.log(color);
+});
+
+Output: 
+red
+orange
+yellow
+green
+
+Exercise
+---------------
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+var colors = ["red","orange", "yellow", "green"];
+
+numbers.forEach(function(color){
+	if(color % 3 == 0) {
+		console.log(color);
+	}
+});
+
+Output:
+3
+6
+9
 
 
