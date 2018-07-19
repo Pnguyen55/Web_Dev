@@ -1,0 +1,68 @@
+Objects
+----------------
+//Store data in key-value pairs
+
+var person = {
+	name: "Cindy",
+	age: 21,
+	city: "LA"
+};
+
+//Objects have no order
+
+Retrieving Data
+-----------------------
+Bracket or dot notation
+
+person["name"]
+
+person.name
+
+//you cannot use dot notation if the property starts with a number or has a space
+someObject.2blah	//invalid
+someObject.fav color	//invalid
+
+//bracket notation, let's you use variable names to look up object values
+var str = "name"
+person[str] //this will evaluate str as name and get the object's name value
+
+Updating Data
+------------------------
+var person = {
+	name: "Cindy",
+	age: 21,
+	city: "LA"
+};
+
+person["age"] += 1;
+person.city = "London";
+
+Creating Objects
+-------------------------
+
+var person = {}
+person.name = "Travis";
+person.age = 21;
+person.city = "LA";
+
+var person = {
+	name: "Travis",
+	age: 21,
+	city: "LA"
+};
+
+var person = new Object();
+person.name = "Travis";
+person.age = 21;
+person.city = "LA";
+
+Nested Objects
+------------------
+
+var object {
+	var something = "something";
+	var nestedObject {
+		var someValue = 0;
+	};
+
+object.nestedObject.someValue
