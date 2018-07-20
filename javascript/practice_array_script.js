@@ -13,10 +13,12 @@ function isUniform(array){
 		if(array[i] != theTruth){
 			return false;
 		}
+		console.log(array[i]);
 	}
 
 	return true;
 }
+
 
 function sumArray(array){
 	var sum = 0;

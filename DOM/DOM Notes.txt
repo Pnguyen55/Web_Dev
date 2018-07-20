@@ -1,0 +1,172 @@
+Document 
+------------------
+
+document.URL; 	//gets the document link
+document.head;	//gets everything in the html head
+document.body;	//gets everything in the html body
+document.links;	//gets all the link and anchor tags
+
+Main Methods
+---------------
+//Selectors
+document.getElementById()
+document.getElementsByClassName()
+document.getElementsByTagName()
+document.querySelector()
+document.quertySelectorAll()
+
+
+
+document.getElementsById()
+------------------------------
+var tag = document.getElementById("highlight"); //li#highlight
+<li id="highlight"> List Item 1</li>
+
+document.getElementsByClassName()
+------------------------------
+var tags = document.getElementsByClassName("bolded"); //li.bolded
+[<li class="bolded"> List Item 2</li>,
+<li class="bolded"> List Item 3</li>]
+
+document.getElementsByTagName()
+------------------------------
+var tags = document.getElementsByTagName("li"); //li
+[<li id="highlight"> List Item 1</li>,
+<li id="bolded"> List Item 2</li>,
+<li id="bolded"> List Item 3</li>]
+
+
+
+querySelector
+------------------------------
+//Returns the first element that matches a given CSS-style selector
+var tag = document.querySelector("#highlight");
+
+<li id="highlight"> List Item 1</li>
+
+var li = document.querySelector("li");
+<li id="highlight"> List Item 1</li>
+
+var li = document.querySelector("li a.special");
+
+
+querySelectorAll
+-----------------------------
+//Returns the all elements that matches a given CSS-style selector
+var li = document.querySelectorAll("li");
+[<li id="highlight"> List Item 1</li>,
+<li id="bolded"> List Item 2</li>,
+<li id="bolded"> List Item 3</li>]
+
+
+Exercise 
+------------------------------
+//Come up with 4 different ways to select the first <p> tag
+var p = document.querySelector("#first");
+var p = document.getElementById("first");
+var p = document.getElementsByClassName("special")[0];
+var p = document.querySelector("p")
+
+
+Manipulating Style
+------------------------------
+//Select
+var tag = document.getElementById("highlight");
+
+//Manipulate
+tag.style.color = "blue";
+tag.style.border = "10px solid red";
+tag.style.fontSize = "70px";
+tag.style.background = "yellow";
+tag.style.marginTop = "200px";
+
+Separation of Concerns
+------------------------------
+//Recommended for styles be defined in seperate files.
+
+Structure, Behavior, and Presentation
+HTML	, Javascript, and CSS
+
+
+An Alternative 
+------------------------------
+//Rather than directly manipulating style with JS, 
+//we can define a CSS class and toggle it on and off with JS
+
+.some_class {	
+	color: blue;
+	border: 10px solid red;
+}
+
+var tag = document.getElementById("highlight");
+tag.classList.add("some_class");
+
+Class List 
+----------------
+//classList is a read-only list that contains classes for a given element
+
+var tag = document.querySelector("hi");
+
+.another_class {	
+	color: purple;
+	fontSize: 50px;
+}
+//Add a class to the selected element
+tag.classList.add("another_class");
+
+//Remove a class
+tag.classList.remove("another_class");
+
+//Toggle a class
+tag.classList.toggle("another_class");
+
+
+Text Context
+---------------------
+//Returns a string of all the text contained in a given element
+
+<p>
+	This is an <strong>awesome </strong> paragraph
+</p>
+//Select the <p> tag:
+var tag = document.querySelector("p");
+
+//Retrieve the textContent:
+tag.textContent //"This is an awesome paragraph"
+
+//Alter the textContent:
+tag.textContent = "blah blah blah";
+
+innerHTML
+-------------------
+//Similar to textContent 
+//returns a string of all the text including the HTML
+
+//Retrieve the innerHTML:
+tag.innerHTML //"This is an <strong>awesome </strong> paragraph"
+
+
+Attributes
+--------------------
+//User getAttribute() and setAttribute() to read 
+//and write attributes like src or href
+
+<a href="www.google.com"> I am a link </a>
+<img src ="logo.png">
+
+var link = document.querySelector("a");
+
+link.getAttribute("href"); //www.google.com
+
+//Change href attribute
+link.setAttribute("href", "www.dogs.com");
+//<a href="www.dogs.com"> I am a link </a>
+
+//To change the image src
+var img = document.querySelector("img");
+
+img.setAttribute("src", "corgi.png");
+//<img src ="corgi.png">
+
+
+
