@@ -1,0 +1,33 @@
+Events
+-------------------
+
+The process goes as follows: 
+
+We select an element, 
+then we add an event listener 
+
+Syntax
+-------------------
+
+element.addEventListener(type, functionToCall);
+
+var button = document.querySelector("button");
+button.addEventListener("click", function() {
+	console.log("Someone clicked the button!");
+});
+
+
+var h1 = document.querySelector("h1");
+
+h1.addEventListener("click", function(){
+	console.log("Clicked h1!!!");
+});
+
+//Adding multiple listeners
+var lis = document.querySelectorAll("li");
+
+for(var i = 0; i < lis.length; i++) {
+	lis[i].addEventListener("click", function() {
+		this.style.color = "pink";
+	});
+}
